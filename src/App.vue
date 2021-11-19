@@ -7,7 +7,7 @@
 
 <Tasks @toggle-reminder="toggleReminder" @delete-task="deleteTask" :tasks="tasks"/>
 
-
+<Footer />
 </div>
 
 
@@ -18,13 +18,14 @@
 import Header from './components/Header'
 import Tasks from './components/Tasks'
 import AddTask from './components/AddTask'
-
+import Footer from  './components/Footer'
 export default {
   name: "App",
   components: {
     Header,
     Tasks,
-    AddTask
+    AddTask,
+    Footer
   },
   data(){
     return {
